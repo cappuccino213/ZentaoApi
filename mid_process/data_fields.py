@@ -117,7 +117,7 @@ build_info_fields = {
 	'product': fields.Integer,
 	'project': fields.Integer,
 	'scmPath': fields.String,
-	'filmPath': fields.String,
+	'filePath': fields.String,
 	'date': fields.String,
 	'stories': fields.String,
 	'bugs': fields.String,
