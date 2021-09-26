@@ -109,6 +109,22 @@ Task_list_fields = {
 	'report_url': fields.String,
 }
 
+"""版本信息"""
+build_info_fields = {
+	'build_id': fields.Integer,
+	'name': fields.String,
+	'branch': fields.String,
+	'product': fields.Integer,
+	'project': fields.Integer,
+	'scmPath': fields.String,
+	'filmPath': fields.String,
+	'date': fields.String,
+	'stories': fields.String,
+	'bugs': fields.String,
+	'builder': fields.String,
+	'desc': fields.String
+}
+
 """需求"""
 story_fields = {
 	'id': fields.Integer,

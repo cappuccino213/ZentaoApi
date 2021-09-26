@@ -6,7 +6,7 @@
 # @File    : qa_testtask.py
 # @Software: PyCharm
 from flask_restful import Resource, marshal
-from mid_process.request_parse import qa_task_args, qa_testtask_args
+from mid_process.request_parse import  qa_testtask_args
 from models.qa_testtask_model import TestTaskModel
 from mid_process.data_fields import Task_list_fields
 from mid_process.response_json import response

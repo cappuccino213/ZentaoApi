@@ -63,6 +63,15 @@ def testtask_args():
 	return args.parse_args()
 
 
+"""版本信息入参解析"""
+
+
+def build_info_args():
+	args = reqparse.RequestParser()
+	args.add_argument('id', type=int)
+	return args.parse_args()
+
+
 """新增任务入参解析"""
 
 

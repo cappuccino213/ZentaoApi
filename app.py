@@ -13,6 +13,7 @@ from resources.qa_testtask import QaTestTask
 from resources.zt_story import Story
 from resources.zt_test_story import TestStory
 from resources.zt_task import Task
+from resources.zt_build import BuildInfo
 from resources.zt_bug import Bug
 from resources.zt_project import Project
 from resources.zt_project_statistics import ProjectStatistics
@@ -32,6 +33,7 @@ api.add_resource(TestTask, '/zentao/testtask')
 api.add_resource(Story, '/zentao/story')
 api.add_resource(TestStory, '/zentao/teststory')
 api.add_resource(Task, '/zentao/task')
+api.add_resource(BuildInfo, '/zentao/build')
 api.add_resource(Bug, '/zentao/bug')
 api.add_resource(Project, '/zentao/project')
 api.add_resource(ProjectStatistics, '/zentao/project_statistics')
