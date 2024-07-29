@@ -6,7 +6,7 @@
 # @File    : qa_task.py
 # @Software: PyCharm
 from flask_restful import Resource, marshal
-from mid_process.request_parse import qa_task_args
+from mid_process.request_parse import qa_task_args,qa_testtask_args
 from models.qa_task_model import TaskModel
 from mid_process.data_fields import Task_list_fields
 from mid_process.response_json import response
@@ -137,9 +137,8 @@ class QaTask(Resource):
         story_url = args['story_url']
         testtask_url = args['testtask_url']
         report_url = args['report_url']
-
         task = TaskModel.query_task_id(task_id)
-        print(task)
+        # print(task)
         task.task_type = task_type
         task.product = product
         task.project = project
@@ -175,7 +174,7 @@ class QaTask(Resource):
 class QaQueryTask(Resource):
     @staticmethod
     def get():
-        args = QaQueryTask_args()
+        args = qa_testtask_args()
         product = args['product']
         project = args['project']
         task_type = args['task_type']
