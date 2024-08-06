@@ -18,6 +18,7 @@ class Task(Resource):
 	@staticmethod
 	def post():
 		body = task_args()
+		# print(body)
 		task = ZtTaskModel.query_checkbox(body['id'], body['openedBy'], body['assignedTo'], body['finishedBy'],
 										  body['dateType'], body['beginDate'], body['endDate'],body['project'],body['status'])
 		if task:
